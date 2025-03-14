@@ -2,6 +2,7 @@ const arrayToCsv = (array) => {
   return array.map(row => row.join(',')).join('\n');
 };
 
+
 function doGet(e){
   if(e.parameter.key!=="secureKey8849465") {
     var JSONOutput = ContentService.createTextOutput('{"error": "No access!","e":'+JSON.stringify(e)+'}');
